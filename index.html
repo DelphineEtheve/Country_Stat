@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rye&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/main.js" defer></script>
+
+    <title>Country Stat</title>
+</head>
+<body>
+    <header>
+        <h1>Country Stats</h1>
+        <p>
+            Aide au choix des chorégraphies à enseigner
+        </p>
+    </header>
+    <main>
+
+        <section id="presentation">
+            <h2>Pourquoi ce site ?</h2>
+
+            <p>
+                Cette base de données analyse les playlists de bals afin d'identifier
+                les chorégraphies les plus programmées.
+            </p>
+
+            <p>
+                L'objectif est d'aider les animateurs à sélectionner des danses
+                que les élèves auront réellement l'occasion de retrouver en bal.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Chorégraphies les plus programmées</h2>
+            <ul id="top-dances"></ul>
+        </section>
+
+        <section id="filters">
+            <h2>Rechercher</h2>
+
+            <label for="level">Niveau :</label>
+            <select id="level">
+                <option value="all">Tous</option>
+                <option value="D">Débutant</option>
+                <option value="N">Novice</option>
+                <option value="I">Intermédiaire</option>
+                <option value="P">Partner</option>
+            </select>
+
+            <button>Filtrer</button>
+        </section>
+
+        <section id="top-beginner">
+            <h2>Top Débutant</h2>
+
+            <ol>
+                <li>Homecoming (8)</li>
+                <li>Wings To Fly (7)</li>
+                <li>Back To The Start (6)</li>
+                <li>Hoedown (5)</li>
+                <li>Miles On It (5)</li>
+            </ol>
+        </section>
+
+        <section id="top-novice">
+            <h2>Top Novice</h2>
+
+            <ol>
+                <li>The One</li>
+                <li>Southern Blood</li>
+                <li>Heel Toe Rodeo</li>
+                <li>Role Model</li>
+                <li>Natalia's Country</li>
+            </ol>
+        </section>
+
+        <section id="top-inter">
+            <h2>Top Intermédiaire</h2>
+
+            <ol>
+                <li>Troubled Waters</li>
+                <li>Marshall County Man</li>
+                <li>Foolish Feelings</li>
+                <li>Liquor Talking</li>
+                <li>Bloodline</li>
+            </ol>
+        </section>
+
+        <section id="trending">
+            <h2>Danses à surveiller</h2>
+
+            <p>
+                Ces danses apparaissent de plus en plus souvent dans les playlists
+                analysées.
+            </p>
+
+            <ul>
+                <li>Turn It On</li>
+                <li>Twenty Two</li>
+                <li>Love Potion 666</li>
+                <li>Calum's Rise</li>
+            </ul>
+        </section>
+
+        <section id="pot-commun">
+            <h2>Pot Commun</h2>
+
+            <p>
+                Suivi des danses issues des différents Pot Commun régionaux.
+            </p>
+
+            <button>Voir les statistiques</button>
+        </section>
+
+        <section id="search-dance">
+            <h2>Rechercher une danse</h2>
+
+            <input
+                type="text"
+                placeholder="Exemple : Homecoming">
+
+            <button>Rechercher</button>
+
+            <article>
+                <h3>Résultat</h3>
+
+                <p>Niveau : Débutant</p>
+
+                <p>Nombre d'apparitions : 8</p>
+
+                <p>
+                    Clubs :
+                </p>
+
+                <ul>
+                    <li>Country Vine</li>
+                    <li>Infinity Country</li>
+                    <li>Line Dancer Viriatis</li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+
+
+</body>
+</html>
